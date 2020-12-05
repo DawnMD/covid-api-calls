@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>COVID 19 Updates ☠</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h2>COVID 19 Updates ☠</h2>
+		<div id="data">
+			<form>
+				<div class="row">
+					<div class="search">
+						<label for="country">Country</label>
+						<input
+							class="u-full-width"
+							type="text"
+							placeholder="Country Name"
+							id="country"
+						/>
+					</div>
+				</div>
+				<button type="submit" class="button-primary">Search</button>
+			</form>
+			<div id="table">
+				<table class="u-full-width hide">
+					<thead>
+						<tr>
+							<th>Country</th>
+							<th>Confirmed</th>
+							<th>Recoveries</th>
+							<th>Death</th>
+							<th>Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr id="insert"></tr>
+					</tbody>
+				</table>
+				<button id="re" class="hide reload">Seach Another</button>
+			</div>
+			<button id="fail" class="hide fail">Reload</button>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>

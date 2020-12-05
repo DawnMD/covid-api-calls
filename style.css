@@ -1,0 +1,19 @@
+form {
+	margin: 0 auto;
+	width: 50%;
+	margin-top: 5%;
+}
+h2 {
+	text-align: center;
+}
+.hide {
+	display: none;
+}
+.fail {
+	width: 100%;
+	color: red;
+}
+.reload {
+	color: greenyellow;
+	width: 100%;
+}
